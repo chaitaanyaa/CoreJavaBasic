@@ -43,9 +43,6 @@ Beetle.k initialized
 k = 0
 j = 1
 
-
-
-
 class Insect {
 	int i = 1;
 	int j;
