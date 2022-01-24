@@ -1,0 +1,63 @@
+2.	Concept of method implementation 
+
+Write a program to create ‘Square’ and ‘Rectangle’ class. 
+i.	Implement methods to calculate area and perimeter of square and rectangles. These two methods are going to take side as argument in square and length and breadth in case of rectangle
+
+
+ii.	Create a ‘MainClass’ in which define main method ,in which create two object for each Square and Rectangle class, Now calculate then show area and perimeter in the console after providing appropriate values for side , length & breadth using methods of these classes.
+
+class  Square
+{ 
+	float side,area,perimeter;
+	void setValues(float s)
+	{
+		side=s;
+	}
+	void CalArea()
+	{
+		area= side*side;
+		perimeter = 4*side;
+	}
+	void display()
+	{
+		System.out.println("Perimeter of Square:"+perimeter+ ", Area of Square: "+area);
+	}
+}
+class Rectangle
+{
+	int perimeter;
+	int length, breadth, area;
+	 
+	 void setValues(int l, int b)
+	{
+		 length=l;
+		 breadth=b;
+	}
+	void calArea()
+	{
+		area= length*breadth;
+		perimeter = 2*length+2*breadth; 
+	}
+	void display()
+	{
+		System.out.println("Perimeter of Rectangle:"+perimeter+ ", Area of Rectangle: "+area);
+	}
+}
+public class Test101
+{
+	public static void main (String[] args)
+	{
+		Square s1=new Square();
+		s1.setValues(2);
+		s1.CalArea();
+		s1.display();
+
+		Rectangle r1=new Rectangle();
+		r1.setValues(2,3);
+		r1.calArea();
+		r1.display();
+	}
+}
+Output:
+Perimeter of Square:8.0, Area of Square: 4.0
+Perimeter of Rectangle:10, Area of Rectangle: 6

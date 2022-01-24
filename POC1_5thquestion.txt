@@ -1,0 +1,13 @@
+5.	Find the output and write explanation? 
+
+class Main {
+ public static void main(String[] args) { 
+int t; 
+System.out.println("Value of variable t : "+t); 
+}
+ }
+
+Error: variable t might not have been initialized
+Explanation: This error occurs when you are trying to use a local variable without initializing it globally.
+ The variable line is not initialized globally before we request to print it.(the error is detected at compile time).
+

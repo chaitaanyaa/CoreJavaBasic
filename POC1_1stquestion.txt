@@ -1,0 +1,68 @@
+Name:- Chaitanya Shivsharan
+Batch:-2021-6523
+EnrollmentNumber:-EBEON1221519789
+
+
+
+CORE JAVA LAB EXERCISE STAGE-1
+
+1.	Concept of Class and Object
+
+ i.  Write a program to create ‘Student’ class with rollNo and name as two instance variables.
+
+
+class  Student101
+{
+	int RollNo;									
+	String Name;									
+
+public static void main(String[] args) 
+	{
+		Student101 student1 = new Student101();
+		Student101 student2 = new Student101();
+	
+		student1.RollNo = 1;
+		student1.Name = "Chaitanya";
+		
+
+	System.out.println("Student Roll no: "+student1.RollNo);
+         System.out.println("Student Name : "+student1.Name);
+         
+	}
+}
+
+Output>>>>>>>>
+Student Roll no: 1
+Student Name : Chaitanya
+
+
+
+ii. Create two objects student1, student2 for the Student class and assign any appropriate values to the objects. Display the Object content on a Console.
+Ans>>>>>>>
+class  Student
+{ 
+	
+		int roll_no1 = 2470;
+		String name1 = "Chaitanya";
+
+		int roll_no2 = 1632;
+		String name2 = "Hackathon";
+	
+
+    public static void main(String[] args) 
+	{
+        // creating object st of class Student
+        Student st1 = new Student();
+        System.out.println(st1.name1);
+		System.out.println(st1.roll_no1);
+
+		Student st2 = new Student();
+        System.out.println(st2.name2);
+		System.out.println(st2.roll_no2);
+    }
+}
+Output>>>>>>>>>>>>>. 
+Chaitanya
+2470
+Hackathon
+1632

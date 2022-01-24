@@ -1,0 +1,23 @@
+6.	Find the output and write explanation? 
+
+class Test { 
+public static void main(String[] args) { 
+byte b = 127;
+ ++b;
+ b++;
+ System.out.println("Value of variable b : "+b); 
+}
+}
+Output:
+Value of variable b : -127
+
+Byte Range is -128 to 127
+
+The variable b is initialized to 127.
+But the range of byte in java is :
+1 byte	Stores whole numbers from -128 to 127
+The code increments the value of b by one.
+++b pre-increment is used so b = -128, later b++ that is post-increment so b = -128 + 1.
+So, b=-127
+
+ So the code prints out "Value of variable b : -127"
